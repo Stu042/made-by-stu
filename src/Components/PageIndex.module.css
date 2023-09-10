@@ -1,0 +1,17 @@
+.container {
+    margin: 0;
+}
+
+.item {
+    border-left-width: 0;
+    padding: 1em 0 1em 0.5em;
+    list-style-type: none;
+    background-color: var(--background-darker-colour);
+    border-radius: 7px;
+    margin-bottom: 3px;
+}
+
+.info {
+    color: var(--foreground-light-colour);
+    margin: 0.25em 0 0 1em;
+}
