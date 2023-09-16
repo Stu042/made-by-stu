@@ -34,6 +34,9 @@ h2 {
 a {
 	color: var(--foreground-muted-colour);
 	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: var(--foreground-light-colour);
+	text-decoration-thickness: 0.1rem;
 }
 
 a:hover {
@@ -42,33 +45,6 @@ a:hover {
 
 img {
 	width: var(--page-width);
-	margin-bottom: 2em;
-	border-radius: 1em;
-}
-
-.footer {
-	margin-top: 3em;
-	color: var(--foreground-light-colour);
-}
-
-ul.breadcrumb {
-	display: flex;
-	align-items: center;
-	padding-inline-start: 0;
-	margin-block-end: 0;
-	margin-block-start: 0;
-	list-style-type: none;
-	margin-top: -1.5em;
-	margin-bottom: 2em;
-}
-
-li.spacer {
-	padding: 0 5px;
-	color: var(--foreground-light-colour);
-}
-
-img.small-img {
-	width: calc(calc(var(--page-width) * 2) / 3);
 	margin-bottom: 2em;
 	border-radius: 1em;
 }

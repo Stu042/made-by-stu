@@ -1,7 +1,7 @@
 import React from "react";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {foundation} from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import "./code-block.css"
+import styles from "./code-block.module.css"
 
 export interface CodeProps {
 	codeString: string;
@@ -20,7 +20,7 @@ export class CodeBlock extends React.Component<CodeProps> {
 			return(<></>);
 		}
 		return (
-			<div className={"code-block"}>
+			<div className={styles.codeBlock}>
 				<SyntaxHighlighter language="c" style={foundation}>
 					{codeString}
 				</SyntaxHighlighter>

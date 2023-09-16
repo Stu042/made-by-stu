@@ -18,7 +18,7 @@ class PageIndex extends React.Component<PageIndexProps> {
 		return <ul className={styles.container}>
 			{
 				items.map(function (value) {
-					return <li className={styles.item}>
+					return <li className={styles.item} key={value.link}>
 						<a href={value.link}>{value.text}</a>
 						<p className={styles.info}>{value.description}</p>
 					</li>

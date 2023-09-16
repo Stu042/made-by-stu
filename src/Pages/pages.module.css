@@ -1,0 +1,4 @@
+
+.smallImg {
+    width: calc(calc(var(--page-width) * 2) / 3);
+}

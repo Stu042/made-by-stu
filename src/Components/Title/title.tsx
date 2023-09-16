@@ -1,13 +1,13 @@
 import React from 'react';
-import './title.css';
-import Breadcrumbs from "./breadcrumbs/Breadcrumbs";
-import {BreadcrumbProp} from "./breadcrumbs/Breadcrumb";
+import Breadcrumbs, {BreadcrumbItem} from "./breadcrumbs/Breadcrumbs";
+import styles from "./title.module.css"
 
 
 export interface TitleProps {
 	title: string,
-	breadcrumbs: BreadcrumbProp[]
+	breadcrumbs: BreadcrumbItem[]
 }
+
 
 class Title extends React.Component<TitleProps> {
 	static defaultProps: { title: string; breadcrumbs: string[]; };
@@ -18,7 +18,7 @@ class Title extends React.Component<TitleProps> {
 		return (
 			<>
 				<h1>Welcome to Made by Stu</h1>
-				<h2 className={"sub-title"}>{title}</h2>
+				<h2 className={styles.subTitle}>{title}</h2>
 				<Breadcrumbs breadcrumbs={breadcrumbs}/>
 			</>
 		);
