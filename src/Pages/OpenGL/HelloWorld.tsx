@@ -8,7 +8,7 @@ import pageStyles from "../pages.module.css"
 
 class HelloWorld extends React.Component {
     componentDidMount() {
-        document.title = "How to Host a Simple Website";
+        document.title = "Simplest(?) OpenGL Program";
     }
 
     render() {
@@ -27,13 +27,13 @@ class HelloWorld extends React.Component {
                     target="_blank"
                     rel="noreferrer">GitHub</a>. </p>
                 <h3>and There Was Code</h3>
-                <div className={"info"}>
+                <div className={styles.info}>
                     <p>As usual with C, we start with the includes</p>
                     <ul>
-                        <li>stdio gives us printf, etc</li>
-                        <li>stdbool is a weird C thing in that you can't use the type bool without it</li>
-                        <li>SDL allows us to create a window and have some control over it - very useful</li>
-                        <li>and lastly glew give us access to the OpenGL functions that your graphics driver already has
+                        <li>stdio gives us printf, etc.</li>
+                        <li>stdbool is a C thing, we can't use the type bool without it.</li>
+                        <li>SDL allows us to create a window and have control over it, plus a lot more.</li>
+                        <li>and lastly glew gives access to the OpenGL functions, that your graphics driver already knows about.
                         </li>
                     </ul>
                 </div>
@@ -42,8 +42,7 @@ class HelloWorld extends React.Component {
                     "#include <stdbool.h>\n" +
                     "#include <SDL.h>\n" +
                     "#include <GL/glew.h>"}/>
-                <p className={styles.info}>I am indulging a little here, but it is nicer to collect variables" +
-                    " together and these structs will
+                <p className={styles.info}>I am indulging a little here, but it is nicer to collect variables together and these structs will
                     hold some information that will make life easier for us.</p>
                 <CodeBlock codeString={
                     "typedef struct {\n" +

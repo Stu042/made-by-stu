@@ -3,6 +3,7 @@ import Title from "../Components/Title/title";
 import Footer from "../Components/footer";
 import PageIndex from "../Components/PageIndex";
 
+
 class Home extends React.Component {
 	componentDidMount() {
 		document.title = "Home Page";

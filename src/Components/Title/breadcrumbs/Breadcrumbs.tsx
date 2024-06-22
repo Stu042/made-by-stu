@@ -22,11 +22,11 @@ class Breadcrumbs extends React.Component<BreadcrumbsProps> {
 					breadcrumbs.map(function (value, index, array) {
 						if (index < array.length - 1) {
 							return <>
-								<Breadcrumb key={index} uiName={value.uiName} link={value.link}/>
+								<Breadcrumb index={index} uiName={value.uiName} link={value.link}/>
 								<span className={styles.spacer}>::</span>
 							</>
 						}
-						return <Breadcrumb key={array.length} uiName={value.uiName} link={value.link}/>
+						return <Breadcrumb index={array.length} uiName={value.uiName} link={value.link}/>
 					})
 				}
 			</nav>

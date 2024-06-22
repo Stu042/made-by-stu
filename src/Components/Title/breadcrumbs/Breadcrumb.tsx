@@ -2,7 +2,7 @@ import React from 'react';
 
 
 export interface BreadcrumbProp {
-    key: number,
+    index: number,
     uiName: string,
     link: string
 }
@@ -14,7 +14,7 @@ class Breadcrumb extends React.Component<BreadcrumbProp> {
     render() {
         const uiName = this.props.uiName;
         const link = this.props.link;
-        const key = this.props.key;
+        const key = uiName + this.props.index;
         return (
             <a key={key} href={link}>{uiName}</a>
         );

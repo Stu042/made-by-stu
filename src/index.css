@@ -3,7 +3,7 @@
 	--background-colour: #efefef;
 	--background-darker-colour: #e0e0e0;
 	--foreground-colour: #2b2b2b;
-	--foreground-muted-colour: #4b4b4b;
+	--foreground-muted-colour: #8b8b8b;
 	--foreground-light-colour: #8b8b8b;
 	--purple-highlight-colour: #41398EFF;
 }
@@ -25,14 +25,25 @@ code {
 
 h1 {
 	color: var(--foreground-muted-colour);
+	
+}
+h1:not(:hover) {
+	opacity: 0;
+}
+h1:hover {
+	opacity: 1;
+}
+h1 {
+	transition: opacity 1s;
 }
 
 h2 {
 	margin-top: 2em;
 }
 
+
 a {
-	color: var(--foreground-muted-colour);
+	color: var(--foreground-colour);
 	font-weight: bold;
 	text-decoration: underline;
 	text-decoration-color: var(--foreground-light-colour);
